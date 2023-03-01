@@ -1,4 +1,4 @@
-- hosts: master
+- hosts: manager
   tasks:
      - name: Configuring Manager Node
        become: yes
