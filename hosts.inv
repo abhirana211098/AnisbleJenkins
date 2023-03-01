@@ -3,3 +3,10 @@ Jenkins_Splunk_s1 ansible_host=43.204.150.131 ansible_connection=ssh ansible_use
 Jenkins_Splunk_s2 ansible_host=15.206.195.49 ansible_connection=ssh ansible_user=ec2-user 
 Jenkins_Splunk_s3 ansible_host=13.235.86.77 ansible_connection=ssh ansible_user=ec2-user 
 
+[manager]
+m1 ansible_host=43.204.150.131 ansible_connection=ssh ansible_user=ec2-user
+
+[peer]
+p1 ansible_host=15.206.195.49 ansible_connection=ssh ansible_user=ec2-user
+p2 ansible_host=13.235.86.77 ansible_connection=ssh ansible_user=ec2-user
+
