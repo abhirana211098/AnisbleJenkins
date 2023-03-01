@@ -22,7 +22,7 @@
        become: yes
        become_user: root
        command:
-             cmd: /opt/splunk/bin/splunk edit cluster-config -mode peer -manager_uri https://10.160.31.200:8089 -replication_port 9997 -secret 123456789
+             cmd: /opt/splunk/bin/splunk edit cluster-config -mode peer -manager_uri https://43.204.150.131:8089 -replication_port 8085 -secret 123456789
  -auth admin:Tata@123
              
      - name: pause
