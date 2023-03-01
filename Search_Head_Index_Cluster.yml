@@ -1,0 +1,17 @@
+- hosts: Indexer_Search_Head
+  tasks:
+     - name: Configuring Indexer's Search Head
+       become: yes
+       become_user: root
+       command:
+             cmd: /opt/splunk/bin/splunk edit cluster-config -mode searchhead -manager_uri https://43.204.150.131:8089 -secret 123456789 -auth admin:Tata@123
+             
+     - name: pause
+       pause:
+          minutes: 1
+          
+     - name: splunk restart for Configuring Manager Node
+       become: yes
+       become_user: root
+       command:
+             cmd: /opt/splunk/bin/splunk restart
