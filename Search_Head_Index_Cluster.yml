@@ -10,7 +10,7 @@
        pause:
           minutes: 1
           
-     - name: splunk restart for Configuring Manager Node
+     - name: splunk restart for Configuring Indexer_Search_Head
        become: yes
        become_user: root
        command:
