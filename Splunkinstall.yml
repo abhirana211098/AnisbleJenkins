@@ -35,7 +35,7 @@
        command:
          cmd: /opt/splunk/bin/splunk restart
 
-     - name: Splunk boot start
+     - name: Splunk boot start so software starts when the system boots up
        become: yes
        become_user: root
        command:
