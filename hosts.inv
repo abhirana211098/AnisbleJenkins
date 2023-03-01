@@ -1,1 +1,5 @@
-Jenkins_Install ansible_host=3.110.154.37 ansible_connection=ssh ansible_user=ec2-user 
+[Jenkins_Splunk] 
+Jenkins_Splunk_a1 ansible_host=3.110.154.37 ansible_connection=ssh ansible_user=ec2-user 
+Jenkins_Splunk_a2 ansible_host=3.110.154.37 ansible_connection=ssh ansible_user=ec2-user 
+Jenkins_Splunk_a3 ansible_host=3.110.154.37 ansible_connection=ssh ansible_user=ec2-user 
+
