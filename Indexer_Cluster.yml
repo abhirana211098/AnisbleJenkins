@@ -4,7 +4,7 @@
        become: yes
        become_user: root
        command:
-             cmd: /opt/splunk/bin/splunk edit cluster-config -mode master -replication_factor 2 -search_factor 2 -secret 12345678 -cluster_label mycluster -auth admin:shubham123
+             cmd: /opt/splunk/bin/splunk edit cluster-config -mode manager -replication_factor 2 -search_factor 2 -secret 123456789 -cluster_label Indexer_Cluster -auth admin:Tata@123
              
      - name: pause
        pause:
@@ -22,7 +22,8 @@
        become: yes
        become_user: root
        command:
-             cmd: /opt/splunk/bin/splunk edit cluster-config -mode slave -master_uri https://13.126.84.98:8089 -replication_port 8085 -secret 12345678 -auth admin:shubham123
+             cmd: /opt/splunk/bin/splunk edit cluster-config -mode peer -manager_uri https://10.160.31.200:8089 -replication_port 9997 -secret 123456789
+ -auth admin:Tata@123
              
      - name: pause
        pause:
