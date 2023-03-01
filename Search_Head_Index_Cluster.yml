@@ -1,4 +1,4 @@
-- hosts: Indexer_Search_Headd
+- hosts: Indexer_Search_Head
   tasks:
      - name: Configuring Indexer's Search Head
        become: yes
