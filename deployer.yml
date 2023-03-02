@@ -1,0 +1,14 @@
+- hosts: depl
+  tasks:
+    - name: enable the clustering in deployer
+      copy: 
+          dest: /opt/splunk/etc/system/local/server.conf
+          content: |
+             [shclustering]
+             shcluster_label = shcluster1
+             pass4SymmKey = admin123
+     - name: restart
+       become: yes
+       become_user: root
+       command:
+             cmd: /opt/splunk/bin/splunk restart
