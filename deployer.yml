@@ -1,4 +1,4 @@
-- hosts: depl
+- hosts: deployer
   tasks:
     - name: enable the clustering in deployer
       become: yes
@@ -8,7 +8,7 @@
           content: |
              [shclustering]
              shcluster_label = shcluster1
-             pass4SymmKey = admin123
+             pass4SymmKey = 123456789
      - name: restart
        become: yes
        become_user: root
