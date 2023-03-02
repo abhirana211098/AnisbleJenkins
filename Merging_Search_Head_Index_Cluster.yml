@@ -1,4 +1,4 @@
-- name: shc cluster with indexer
+- name: merging shc cluster with indexer cluster
   hosts: allshc
   become_user: root
   become: yes
