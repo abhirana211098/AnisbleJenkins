@@ -25,15 +25,15 @@ Search_Head_s3 ansible_host=65.2.123.156 ansible_connection=ssh ansible_user=ec2
 
 
 [deployer]
-d1 ansible_host=43.204.231.221 ansible_connection=ssh ansible_user=ec2-user
+d1 ansible_host=43.204.36.251 ansible_connection=ssh ansible_user=ec2-user
 
 [shcluster1]
-d2 ansible_host=13.126.211.205 ansible_connection=ssh ansible_user=ec2-user
+d2 ansible_host=52.66.202.14 ansible_connection=ssh ansible_user=ec2-user
 
 [shcluster2]
-d3 ansible_host=3.110.189.218 ansible_connection=ssh ansible_user=ec2-user
+d3 ansible_host=13.127.240.52 ansible_connection=ssh ansible_user=ec2-user
 
 
 [allshc]
-d2 ansible_host=13.126.211.205 ansible_connection=ssh ansible_user=ec2-user
-d3 ansible_host=3.110.189.218 ansible_connection=ssh ansible_user=ec2-user
+d2 ansible_host=52.66.202.14 ansible_connection=ssh ansible_user=ec2-user 
+d3 ansible_host=13.127.240.52 ansible_connection=ssh ansible_user=ec2-user
