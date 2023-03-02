@@ -1,0 +1,11 @@
+- name: shc cluster with indexer
+  hosts: allshc
+  become_user: root
+  become: yes
+
+  tasks:
+    - name: configure indexer cluster with search head 
+      command : /opt/splunk/bin/splunk edit cluster-config -mode searchhead -master_uri https://65.0.7.16:8089 -secret 123456789 -auth admin:Tata@123
+
+    - name: restart splunk
+      command: /opt/splunk/bin/splunk restart
