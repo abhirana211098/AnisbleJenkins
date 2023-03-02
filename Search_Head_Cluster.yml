@@ -25,7 +25,7 @@
       command: /opt/splunk/bin/splunk restart
       
     - name: configure search peer 
-      command: /opt/splunk/bin/splunk init shcluster-config -auth admin:Tata@123 -mgmt_uri https://13.126.211.205:8089 -replication_port 8085 -replication_factor 2 -conf_deploy_fetch_url https://43.204.231.221:8089 -secret 123456789 -shcluster_label shcluster1
+      command: /opt/splunk/bin/splunk init shcluster-config -auth admin:Tata@123 -mgmt_uri https://52.66.202.14:8089 -replication_port 8085 -replication_factor 2 -conf_deploy_fetch_url https://43.204.36.251:8089 -secret 123456789 -shcluster_label shcluster1
 
     - name: restart splunk
       command: /opt/splunk/bin/splunk restart
@@ -40,7 +40,7 @@
       command: /opt/splunk/bin/splunk restart
     
     - name: configure search peer 
-      command: /opt/splunk/bin/splunk init shcluster-config -auth admin:Tata@123 -mgmt_uri https://3.110.189.218:8089 -replication_port 8085 -replication_factor 2 -conf_deploy_fetch_url https://43.204.231.221:8089 -secret 123456789 -shcluster_label shcluster1
+      command: /opt/splunk/bin/splunk init shcluster-config -auth admin:Tata@123 -mgmt_uri https://13.127.240.52:8089 -replication_port 8085 -replication_factor 2 -conf_deploy_fetch_url https://43.204.36.251:8089 -secret 123456789 -shcluster_label shcluster1
 
     - name: restart splunk
       command: /opt/splunk/bin/splunk restart
@@ -53,5 +53,5 @@
 
   tasks:
     - name: Making cluster captain
-      command: /opt/splunk/bin/splunk bootstrap shcluster-captain -servers_list "https://3.110.189.218:8089,https://13.126.211.205:8089" -auth admin:Tata@123
+      command: /opt/splunk/bin/splunk bootstrap shcluster-captain -servers_list "https://52.66.202.14:8089,https://13.127.240.52:8089" -auth admin:Tata@123
 
