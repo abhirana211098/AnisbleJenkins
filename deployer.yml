@@ -3,12 +3,12 @@
     - name: enable the clustering in deployer
       become: yes
       become_user: root
-      copy: 
-          dest: /opt/splunk/etc/system/local/server.conf
-          content: |
-             [shclustering]
-             shcluster_label = shcluster1
-             pass4SymmKey = 123456789
+      copy:
+        dest: /opt/splunk/etc/system/local/server.conf
+        content: |
+          [shclustering]
+          shcluster_label = shcluster1
+          pass4SymmKey = 123456789
      - name: restart
        become: yes
        become_user: root
