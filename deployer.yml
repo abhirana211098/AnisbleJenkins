@@ -1,6 +1,8 @@
 - hosts: depl
   tasks:
     - name: enable the clustering in deployer
+      become: yes
+      become_user: root
       copy: 
           dest: /opt/splunk/etc/system/local/server.conf
           content: |
