@@ -28,3 +28,8 @@ d2 ansible_host=13.126.211.205 ansible_connection=ssh ansible_user=ec2-user
 
 [shcluster2]
 d3 ansible_host=3.110.189.218 ansible_connection=ssh ansible_user=ec2-user
+
+
+[allshc]
+d2 ansible_host=13.126.211.205 ansible_connection=ssh ansible_user=ec2-user
+d3 ansible_host=3.110.189.218 ansible_connection=ssh ansible_user=ec2-user
