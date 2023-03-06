@@ -1,2 +1,2 @@
 # AnisbleJenkins
-Ansible Playbook run using Jenkins for Splunk
+Automating Splunk Installation & Configuring Indexing Cluster & Search Head Cluster using Ansible Playbook by running Jenkins 
